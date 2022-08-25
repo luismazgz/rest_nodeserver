@@ -40,7 +40,7 @@ class Server{
             console.log(`http://localhost:${this.port}`);
         });
         */
-        this.app.listen(8080,()=>{
+        this.app.listen(8080,'0.0.0.0',()=>{
            // console.log(`http://localhost:${this.port}`);
         });
     }
