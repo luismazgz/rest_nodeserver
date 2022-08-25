@@ -6,7 +6,7 @@ class Server{
 
     constructor(){
         this.app = express();
-        //this.port = process.env.PORT;
+        this.port = process.env.PORT;
         this.usuariosPath = '/api/usuarios';
 
         this.conexionDB();
@@ -35,13 +35,8 @@ class Server{
     }
 
     listen(){
-        /*
         this.app.listen(this.port,()=>{
             console.log(`http://localhost:${this.port}`);
-        });
-        */
-        this.app.listen(8080,'0.0.0.0',()=>{
-           // console.log(`http://localhost:${this.port}`);
         });
     }
 }
