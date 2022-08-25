@@ -2,7 +2,7 @@
 const {Router} = require('express');
 const {check} = require('express-validator');
 //si pongo llaves en validación me da error
-const  validacion  = require("../middlewares/validacion" );
+const  validacion  = require("../middlewares/validacion");
 const { validarRolDB, existeEmailDB, existeUsuarioIdDB } = require('../helpers/validaciones_db');
 
 const { usuariosGet, usuariosPost, usuariosDelete, usuariosPatch, usuariosPut } = require('../controllers/usuarios.controller');
